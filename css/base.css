@@ -114,11 +114,22 @@
 }
 
 /* flex test */
+.test-row {
+  max-width: 100%;
+  margin: 0;
+}
+
 .test-flex {
   gap: 1.5rem;
   overflow-y: scroll;
 }
 
+.flex-link {
+  flex: 0 0 calc(calc(100% - 1.5rem) / 2);
+}
+
 .flex-img {
-  height: 150px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
 }
