@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="css/base.css" rel="stylesheet">
+    <!-- chart plugin for labels -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    
+    <title>Catt Sandbox</title>
+  </head>
+  <body>
+    <div class="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar scroll</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Link</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <!-- <div class="banner-container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/nasa-Q1p7bh3SHj8-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/nasa-NuE8Nu3otjo-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/nasa-rTZW4f02zY8-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+  
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div> -->
+
+    <!-- Carousel Images Attirbutions
+                 Photo by <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a> on 
+                 <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+
+    <div class="row">
+      <div class="col-12 d-flex justify-content-start test-flex">
+
+        <a href="#" class="flex-link">
+          <img class="flex-img" src="https://storage.googleapis.com/pig_smart/post_files/2021/08/31/maxresdefault.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django-gsheet%40structured-betterment.iam.gserviceaccount.com%2F20220418%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220418T124259Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=b0b8ea8d0ca30d642bd2aecc6b0fbb8b81beae544b121320fa24867b6058e87f1f03b5b82c7197c0ca281277dc600759cf8c4de5f9f2b6bc842ee130dc1a3567e32622aada4e026a7a59de2ce9f4589c27c76c6877b24438d6bd4486bc922df7d674ea1edfae1841f235313f5d2f5a27c8c8411f8f4e35fa8465141e32378d1ecf8bba870924c98f8a514af6ba71587a15e0328498e51fef737d28aa1443028b51acff9dffd5dceeb54cb01c44d943c5da674dd2f11c1fa773a2593a814e2adc712077b4f50b9c67ebd09243552271bf2c083605ae096995300f4bed1dfb7c3260bcfb9717572ede75901e04977795cdd8b1c940233573c3659bf92bba515892" alt="">
+        </a>
+        <a href="#" class="flex-link">
+          <img class="flex-img" src="https://storage.googleapis.com/pig_smart/post_files/2021/08/31/maxresdefault.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django-gsheet%40structured-betterment.iam.gserviceaccount.com%2F20220418%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220418T124259Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=b0b8ea8d0ca30d642bd2aecc6b0fbb8b81beae544b121320fa24867b6058e87f1f03b5b82c7197c0ca281277dc600759cf8c4de5f9f2b6bc842ee130dc1a3567e32622aada4e026a7a59de2ce9f4589c27c76c6877b24438d6bd4486bc922df7d674ea1edfae1841f235313f5d2f5a27c8c8411f8f4e35fa8465141e32378d1ecf8bba870924c98f8a514af6ba71587a15e0328498e51fef737d28aa1443028b51acff9dffd5dceeb54cb01c44d943c5da674dd2f11c1fa773a2593a814e2adc712077b4f50b9c67ebd09243552271bf2c083605ae096995300f4bed1dfb7c3260bcfb9717572ede75901e04977795cdd8b1c940233573c3659bf92bba515892" alt="">
+        </a>
+        <a href="#" class="flex-link">
+          <img class="flex-img" src="https://storage.googleapis.com/pig_smart/post_files/2021/08/31/maxresdefault.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django-gsheet%40structured-betterment.iam.gserviceaccount.com%2F20220418%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220418T124259Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=b0b8ea8d0ca30d642bd2aecc6b0fbb8b81beae544b121320fa24867b6058e87f1f03b5b82c7197c0ca281277dc600759cf8c4de5f9f2b6bc842ee130dc1a3567e32622aada4e026a7a59de2ce9f4589c27c76c6877b24438d6bd4486bc922df7d674ea1edfae1841f235313f5d2f5a27c8c8411f8f4e35fa8465141e32378d1ecf8bba870924c98f8a514af6ba71587a15e0328498e51fef737d28aa1443028b51acff9dffd5dceeb54cb01c44d943c5da674dd2f11c1fa773a2593a814e2adc712077b4f50b9c67ebd09243552271bf2c083605ae096995300f4bed1dfb7c3260bcfb9717572ede75901e04977795cdd8b1c940233573c3659bf92bba515892" alt="">
+        </a>
+        <a href="#" class="flex-link">
+          <img class="flex-img" src="https://storage.googleapis.com/pig_smart/post_files/2021/08/31/maxresdefault.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django-gsheet%40structured-betterment.iam.gserviceaccount.com%2F20220418%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220418T124259Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=b0b8ea8d0ca30d642bd2aecc6b0fbb8b81beae544b121320fa24867b6058e87f1f03b5b82c7197c0ca281277dc600759cf8c4de5f9f2b6bc842ee130dc1a3567e32622aada4e026a7a59de2ce9f4589c27c76c6877b24438d6bd4486bc922df7d674ea1edfae1841f235313f5d2f5a27c8c8411f8f4e35fa8465141e32378d1ecf8bba870924c98f8a514af6ba71587a15e0328498e51fef737d28aa1443028b51acff9dffd5dceeb54cb01c44d943c5da674dd2f11c1fa773a2593a814e2adc712077b4f50b9c67ebd09243552271bf2c083605ae096995300f4bed1dfb7c3260bcfb9717572ede75901e04977795cdd8b1c940233573c3659bf92bba515892" alt="">
+        </a>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card m-4">
+          
+          <div class="card-body">
+            <div class="banner-container" id="banner-container">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/nasa-Q1p7bh3SHj8-unsplash.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/nasa-NuE8Nu3otjo-unsplash.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/nasa-rTZW4f02zY8-unsplash.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- Carousel Images Attirbutions
+                       Photo by <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a> on 
+                       <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card m-4">
+          <div class="card-header">
+            Aspect ratio of banner: 
+          </div>
+          <div class="card-body">
+            <h1 id="displayRatio"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-12">
+
+        <div class="card m-4 audio-card">
+
+            <h3>Audio Title</h3>
+            <p>Audio Description</p>
+
+            <div class="audio-container">
+
+              <audio src="https://storage.googleapis.com/pig_smart/media/upload_audio/Handon1110.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django-gsheet%40structured-betterment.iam.gserviceaccount.com%2F20220408%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220408T121536Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=0662eb9994da52e3bc55d3c223d9b95aefff39c6e8ba1d14b3a1afc776d82f9c3de7b0dd955b6061105db74ccae1a1b24ac4a545928b0668a889caaa64c414cfef4a8ac8f49ef0926097f66bc412701b4f757e4408d7b85d80a15cec8cb03c356b8586d1c1d12fcef3207e979cad572c185bf107d76d5db32d917db5838aa939e18f6515c5e58fe1b1ec10f1a0537b33b31ec7972c43f97e16334820ed5b173e1b3364a81e7a643e60972bccf5bdedc92bdc030e8443f25ebbae58a963ce49c3bedd976e198c8c1e462e14011cf8ec90d8fecc096257e5cfea053bde7f5fb4ad14b7a15e8f19fd95087e17fb21dab80ba39727aed14dd25ba1ed69bf3c2456db" id="fl-audio">
+              </audio>
+              
+              <div class="audio-wr d-flex align-items-center">
+                <img src="https://storage.googleapis.com/catt-dev-storage/pigsmart/audio-play-btn.png" alt="" class="audio-play-btn pause">
+                <div class="audio-seekbar-wr">
+                  <input type="range" class="audio-seekbar" name="audio-seekbar" id="audioSeekBar">
+                  <div class="audio-seekbar-thumb" id="flAudioThumb">&nbsp;</div>
+                </div>
+              </div>
+           
+            </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card m-4">
+          <div class="card-header">
+            <div class="row d-flex justify-content-between">
+              <div class="col-auto">
+                <h6 class="mb-0">Total Sales</h6>
+              </div>
+              <div class="col-auto d-flex">
+                <select class="form-select form-select-sm me-2">
+                  <option value="0">Last 7 days</option>
+                  <option value="1">Last 30 days</option>
+                  <option value="2">Last 180 days</option>
+                  <option value="3">Last 365 days</option>
+                  <option value="4">Last 3 years</option>
+                </select>
+                </div>
+              </div>
+          </div>
+          <div class="card-body">
+            <div class="chart-container">
+              <canvas id="lineChart1"></canvas>
+            </div>
+          </div>
+          <div class="card-footer bg-light py-2">
+            <div class="row flex-row-reverse">
+              <div class="col-auto">
+                <select class="form-select form-select-sm audience-select-menu">
+                  <option value="week" selected="selected">Last 7 days</option>
+                  <option value="month">Last month</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="row m-4">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h6>Bar Chart</h6>
+          </div>
+          <div class="card-body d-flex">
+            <div class="price-test">
+              <h2>4,993</h2>
+            </div>
+            <div class="chart-container">
+              <canvas id="barChart1"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h6>Bar Chart</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-container">
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h6>Bar Chart</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-container">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <svg class="defs-only">
+        <filter id="monochrome" color-interpolation-filters="sRGB"
+                x="0" y="0" height="100%" width="100%">
+          <feColorMatrix type="matrix"
+            values="0.95 0 0 0 0.05 
+                    0.85 0 0 0 0.15  
+                    43 0 0 0 0.50 
+                    0    0 0 1 0" />
+        </filter>
+      </svg>
+      <a class="profile-link" href="#" title="More about Amelia Bellamy-Royds">
+        <img class="profile-pic" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/91525/AmeliaBR-bw.jpg"/></a>
+      <a class="profile-link" href="#" title="More about AmeliaBR">
+        <img class="profile-pic" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/91525/AmeliaBR2-bw.jpg"/></a>
+      
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
+    <script src="node_modules/chart.js/dist/chart.js"></script>
+    <script src="js/banner-aspectratio.js"></script>
+    <script src="js/linechart1.js"></script>
+    <script src="js/barchart1.js"></script>
+    <script src="js/catt-audio.js"></script>
+  </body>
+</html>
